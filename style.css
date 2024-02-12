@@ -1,0 +1,125 @@
+body{
+        margin: 0;
+        padding: 0;
+        background-color: #E8C872;
+        box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+  
+}
+
+/* LAYOUT */
+#main__wrap{
+    margin: auto;
+   
+}
+
+header{
+    border-bottom: 5px solid white;
+    padding: 1rem;
+    margin-bottom: 17px;
+} 
+
+main{
+    display: flex; 
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+main .section{
+    padding: 10px 20px;
+}
+
+main .left{
+    background-color: #FFF3CF;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* color mixture on button is called what background: color gradient make it using angry bird*/ 
+.btn{
+    width: 20%;
+    padding: 10px 0px;
+    border-radius: 7px;
+    color: black;
+    border: none;
+    background: linear-gradient(90deg, rgba(0, 188, 212, 1) 8%, rgba(193, 186, 124, 1) 41%, rgba(217, 204, 89, 1) 55%, rgba(3, 169, 244, 1) 85%);
+    /* box-shadow: ; */
+
+    
+}
+h2{
+   font-size: 30px;
+}
+
+.guess{
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Rubik Burned', system-ui; */
+    font-size: 60px;
+    text-align: center;
+}
+
+.question-mark-text{
+    font-size: 80px;
+}
+
+.quest-mark-display{
+    width: 20vh;
+    height: 18vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+}
+
+
+.left .input-guess{
+    width: 40%;
+    padding: 5px ;
+    border: 1px solid black ;
+   
+}
+
+.left .input-guess:active {
+    border:  4px solid #637A9F;
+    outline: none;
+}
+
+.left .input-guess:hover{
+    background-color: #C9D7DD;
+    border:  4px solid #637A9F;
+    outline: none;
+}
+
+.btn-check{
+    width: 40%;
+    margin-left: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+@media(max-width: 500px){
+    main .left{
+        background-color: #FFF3CF;
+        margin-right: 0px;
+    
+    }
+    
+
+    main{
+        display: flex; 
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .btn-again{
+        margin-left: 30px;
+    }
+}
